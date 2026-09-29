@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "APTOS 2019 leakage audit: duplicate groups, duplicate-aware splits and reproduction code"
+authors:
+  - family-names: Nambi
+    given-names: Tharun
+    orcid: "https://orcid.org/0009-0001-1177-6635"
+  - family-names: Sakthivel
+    given-names: Nishok
+  - family-names: Kharat
+    given-names: Esshan
+  - family-names: Bhimireddy
+    given-names: Nikhil
+  - family-names: McElroy
+    given-names: Joseph P.
+license: MIT
+repository-code: "https://github.com/Fire-Dev2/aptos-leakage-audit"
+preferred-citation:
+  type: article
+  title: "Data Leakage in Published Diabetic Retinopathy Classifiers Developed on APTOS 2019: A Code-Level Audit and Controlled Reproduction"
+  authors:
+    - family-names: Nambi
+      given-names: Tharun
+    - family-names: Sakthivel
+      given-names: Nishok
+    - family-names: Kharat
+      given-names: Esshan
+    - family-names: Bhimireddy
+      given-names: Nikhil
+    - family-names: McElroy
+      given-names: Joseph P.
+  journal: "IEEE Access"
+  year: 2026
+  status: submitted

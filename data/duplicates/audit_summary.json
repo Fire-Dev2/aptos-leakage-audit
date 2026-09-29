@@ -1,0 +1,81 @@
+{
+  "tool_version": "0.3.0",
+  "n_images": 3662,
+  "splits": {
+    "pool": 3662
+  },
+  "labels": {
+    "2": 999,
+    "4": 295,
+    "1": 370,
+    "0": 1805,
+    "3": 193
+  },
+  "settings": {
+    "hash_size": 16,
+    "phash_thresh": 32,
+    "dhash_thresh": 32,
+    "ncc_cand": 0.95,
+    "ncc_thresh": 0.98,
+    "phash_verify": 12,
+    "ncc_side": 64,
+    "cos_thresh": 0.95,
+    "crop_thr": 15,
+    "embed": null,
+    "confirmed_pairs_added": 0
+  },
+  "pairs": {
+    "exact": 134,
+    "near_verified": 14,
+    "candidate_unverified": 218947,
+    "exact_with_label_conflict": 32,
+    "near_verified_with_label_conflict": 11
+  },
+  "groups": {
+    "n_dup_groups": 131,
+    "images_in_dup_groups": 270,
+    "frac_images_in_dup_groups": 0.0737,
+    "redundant_images": 139,
+    "largest_group": 4,
+    "size_hist": {
+      "2": 124,
+      "3": 6,
+      "4": 1
+    },
+    "groups_with_label_conflict": 37,
+    "images_in_label_conflict_groups": 79,
+    "dup_images_by_class": {
+      "0": 14,
+      "1": 51,
+      "2": 132,
+      "3": 31,
+      "4": 42
+    }
+  },
+  "random_split_expectation": {
+    "0.2": {
+      "test_frac": 0.2,
+      "seeds": 500,
+      "expected_test_images": 732,
+      "mean_frac_contaminated": 0.0603,
+      "mean_images_contaminated": 44.1,
+      "range95": [
+        0.0464,
+        0.0744
+      ]
+    },
+    "0.3": {
+      "test_frac": 0.3,
+      "seeds": 500,
+      "expected_test_images": 1099,
+      "mean_frac_contaminated": 0.053,
+      "mean_images_contaminated": 58.3,
+      "range95": [
+        0.0423,
+        0.0628
+      ]
+    }
+  },
+  "runtime_s": 12.1,
+  "review_pairs_written": 94
+}

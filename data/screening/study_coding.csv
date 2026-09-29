@@ -1,0 +1,13 @@
+study,venue,model_selection,duplicates_removed,copies_before_split,test_batch_dependence,split_released,notes,second_rater_coded
+DiffMIC,MICCAI 2023,Test,No,No,No,Yes,"50 of 1,098 test images have a training copy",yes
+nnMobileNet,CVPRW 2024,Test,No,No,No,No,F1 and specificity are micro-averaged (equal accuracy),yes
+SSiT,IEEE JBHI 2024,Validation,No,No,No,No,,yes
+VMLRI,PLoS ONE 2024,Validation,No,No,No,No,No test script released,yes
+UMKD,MICCAI 2025,Held-out fold (same fold selects and reports),No,No,No,No,Paper: 8:1:1; code: training and one fold,yes
+GCN (graph-enhanced DR),PLoS Comput. Biol. 2025,Validation (restored model is last epoch),No,Yes,Yes,No,Grade-sorted test batches,yes
+RETFound,Nature 2023,Validation (publication-era code tests last epoch),No,No,No,"Yes (2,048/514/1,100; added 2024)",,no
+EyeCLIP,npj Digit. Med. 2025,Validation,No,No,No,No,"Code 55/30/15, paper 55:15:30",no
+Rajaraman et al. (calibration),PLoS ONE 2022,Validation,No,No,No,No,Calibrators fitted and evaluated on test labels,no
+Sugeno et al.,Comput. Biol. Med. 2021,Validation,Yes,No,No,No,Duplicates and blurred images removed,no
+UrFound,MICCAI 2024,Validation,No,No,No,Yes (RETFound split),,no
+Cheng et al.,MIDL 2025,Validation,No,No,No,Yes (RETFound split),,no

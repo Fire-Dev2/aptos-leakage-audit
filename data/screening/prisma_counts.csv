@@ -1,0 +1,14 @@
+stage,count,note
+"Records from original searches (Papers with Code, arXiv, journals, conferences; GitHub 352 repos)",104,"Phase 3 log, 2026-09-22"
+"Records from Europe PMC (query below, 2026-09-25)",268,europepmc_export_2026-09-25.csv
+Duplicates removed,28,1 within original searches + 22 Europe PMC records already in the log + 5 duplicate Europe PMC records (E7)
+Records screened,344,103 + 241
+  Europe PMC: excluded at title screen,95,"E3 62 (48 reviews/surveys, 14 not classification), E2 33"
+  Europe PMC: full-text/code assessment,146,
+    code-mention records assessed in full text,19,"3 include; E2 9, E5 4, E6 2, E4 1"
+"    no full text in Europe PMC, checked individually",35,"1 include; E2 2, E4 1, E5 31 (1 retracted)"
+    full text in Europe PMC with no code/GitHub mention,92,"E5 by full-text search (github/gitlab/""source code""/""code availability"")"
+  Original log: included,6,
+  Original log: excluded,72,"E1 9, E2 26, E3 4, E4 2, E5 28, E8 3"
+  Original log: needs full-text review (UNRESOLVED),25,to resolve before the PRISMA figure is final
+INCLUDED so far,10,"6 original + RETFound, EyeCLIP, calibration (Rajaraman 2022), Sugeno 2021"
