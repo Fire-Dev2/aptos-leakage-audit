@@ -1,0 +1,15 @@
+,,,acc,acc,sensitivity,sensitivity,specificity,specificity,sensitivity_original_images_only,sensitivity_original_images_only,missed_referable,missed_referable,false_referrals,false_referrals
+,,,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+cond,model,order,,,,,,,,,,,,
+A,final_released,class-sorted (released),0.982,0.0024,0.9902,0.0081,0.9938,0.0047,0.9836,0.0136,8.0,6.5574,3.3333,2.5166
+A,final_released,one image at a time,0.9449,0.0082,0.9791,0.0062,0.9791,0.013,0.9762,0.0069,17.0,5.0,11.3333,7.0238
+A,final_released,random order (mean of 5),0.9426,0.0091,0.9751,0.0111,0.9804,0.0091,0.9673,0.0181,20.2667,8.9941,10.6,4.9153
+A,true_bestval,class-sorted (released),0.984,0.0063,0.9914,0.0068,0.9938,0.0056,0.9866,0.0161,7.0,5.5678,3.3333,3.0551
+A,true_bestval,one image at a time,0.9266,0.0325,0.9746,0.013,0.963,0.024,0.9718,0.0154,20.6667,10.5987,20.0,13.0
+A,true_bestval,random order (mean of 5),0.9159,0.0452,0.9674,0.0176,0.9601,0.0297,0.9567,0.0188,26.4667,14.3001,21.6,16.0362
+B,final_released,class-sorted (released),0.8875,0.0124,0.9895,0.0094,0.9335,0.0128,0.9895,0.0094,2.3333,2.0817,21.6667,4.1633
+B,final_released,one image at a time,0.8315,0.0351,0.9219,0.0069,0.9325,0.0111,0.9219,0.0069,17.3333,1.5275,22.0,3.6056
+B,final_released,random order (mean of 5),0.8164,0.0053,0.9372,0.0122,0.9004,0.0066,0.9372,0.0122,13.9333,2.7154,32.4667,2.1572
+B,true_bestval,class-sorted (released),0.9179,0.0197,0.982,0.0238,0.9775,0.0077,0.982,0.0238,4.0,5.2915,7.3333,2.5166
+B,true_bestval,one image at a time,0.6855,0.0445,0.8919,0.0405,0.817,0.0047,0.8919,0.0405,24.0,9.0,59.6667,1.5275
+B,true_bestval,random order (mean of 5),0.7352,0.0275,0.8072,0.0726,0.9086,0.0234,0.8072,0.0726,42.8,16.1233,29.8,7.6315
