@@ -1,5 +1,8 @@
 """Accuracy by duplicate status (DiffMIC and nnMobileNet, released rule) and the headline table.
-Supplementary: this figure is not in the paper; the numbers are the ones quoted in its Section III-D.
+Supplementary: the figure is not in the paper. Its bars are means over the six released-rule runs of each
+model (R0 and R1, three seeds each); these are the percentages quoted in Section III-D. The three
+duplicate-status columns of the headline table (same_grade_dup_acc, conflict_dup_acc, clean_acc) use the
+three R0 runs only, so they differ slightly from those percentages.
 
 Reads   results/diffmic/phase5_per_run.csv, results/diffmic/phase5_selection_inflation.csv,
         results/nnmobilenet/nnmb_per_run.csv, results/nnmobilenet/nnmb_selection_inflation.csv

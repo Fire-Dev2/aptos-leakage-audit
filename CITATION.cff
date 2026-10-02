@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the accompanying paper (preferred citation below) and this archive."
+message: "If you use this code or data, please cite this archive. A citation for the accompanying paper will be added when it is published."
 title: "APTOS 2019 leakage audit: duplicate groups, duplicate-aware splits and reproduction code"
 abstract: >-
   Code and data for a code-level audit of data leakage in diabetic retinopathy classifiers developed
@@ -29,15 +29,3 @@ keywords:
 license: MIT
 repository-code: "https://github.com/Fire-Dev2/aptos-leakage-audit"
 doi: 10.5281/zenodo.23047712
-preferred-citation:
-  type: unpublished
-  title: "Data Leakage in Diabetic Retinopathy Classifiers for Tele-Ophthalmology Screening: A Code-Level Audit and Controlled Reproduction on APTOS 2019"
-  authors:
-    - family-names: Nambi
-      given-names: Tharun
-    - family-names: Kharat
-      given-names: Esshan
-    - family-names: Bhimireddy
-      given-names: Nikhil
-  year: 2026
-  notes: "Manuscript under review."
