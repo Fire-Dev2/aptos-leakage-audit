@@ -1,34 +1,43 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the paper below."
+message: "If you use this code or data, please cite the accompanying paper (preferred citation below) and this archive."
 title: "APTOS 2019 leakage audit: duplicate groups, duplicate-aware splits and reproduction code"
+abstract: >-
+  Code and data for a code-level audit of data leakage in diabetic retinopathy classifiers developed
+  and tested on the APTOS 2019 Blindness Detection dataset. Contents: a duplicate-audit tool with a
+  synthetic validation set; the duplicate groups found among the 3,662 labeled images (131 groups,
+  270 images, 37 groups with conflicting grades) and the manual review of sampled pairs;
+  duplicate-aware split files; the study-selection protocol, PRISMA counts, screening sheets and
+  leakage coding of 12 studies with public code; instrumentation patches and run scripts for three
+  reproduced studies (DiffMIC, nnMobileNet and a graph-enhanced MobileViT classifier); per-run
+  results, per-image predictions of the graph-based reruns, and the analysis and figure scripts.
+  No images are included.
 authors:
   - family-names: Nambi
     given-names: Tharun
     orcid: "https://orcid.org/0009-0001-1177-6635"
-  - family-names: Sakthivel
-    given-names: Nishok
   - family-names: Kharat
     given-names: Esshan
   - family-names: Bhimireddy
     given-names: Nikhil
-  - family-names: McElroy
-    given-names: Joseph P.
+keywords:
+  - data leakage
+  - diabetic retinopathy
+  - APTOS 2019
+  - image duplicates
+  - model selection
+  - reproducibility
 license: MIT
 repository-code: "https://github.com/Fire-Dev2/aptos-leakage-audit"
+doi: 10.5281/zenodo.23047712
 preferred-citation:
-  type: article
-  title: "Data Leakage in Published Diabetic Retinopathy Classifiers Developed on APTOS 2019: A Code-Level Audit and Controlled Reproduction"
+  type: unpublished
+  title: "Data Leakage in Diabetic Retinopathy Classifiers for Tele-Ophthalmology Screening: A Code-Level Audit and Controlled Reproduction on APTOS 2019"
   authors:
     - family-names: Nambi
       given-names: Tharun
-    - family-names: Sakthivel
-      given-names: Nishok
     - family-names: Kharat
       given-names: Esshan
     - family-names: Bhimireddy
       given-names: Nikhil
-    - family-names: McElroy
-      given-names: Joseph P.
-  journal: "IEEE Access"
   year: 2026
-  status: submitted
+  notes: "Manuscript under review."

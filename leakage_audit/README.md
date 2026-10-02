@@ -36,8 +36,8 @@ The first run downloads ImageNet ResNet-50 weights (~100 MB). On an M-series Mac
 
 ## Tiers
 - **exact**: identical bytes or identical pixels
-- **near_verified**: pixel correlation of border-cropped thumbnails ≥ 0.98 (re-saves, resizes, brightness changes)
-- **candidate**: flagged by pHash / dHash / pixel correlation ≥ 0.95 / CNN cosine ≥ 0.95, but not verified. These go to manual review. Crops and "same eye, different photo" land here.
+- **near_verified**: pixel correlation of border-cropped thumbnails ≥ 0.98 **and** pHash distance ≤ 12 bits (re-saves, resizes, brightness changes). Both are required: photos from one camera can correlate above 0.98 at thumbnail size without being the same image.
+- **candidate**: flagged by pHash or dHash distance ≤ 32 bits, pixel correlation ≥ 0.95 or CNN cosine ≥ 0.95, but not verified. These go to manual review. Crops and "same eye, different photo" land here.
 
 Headline counts use **exact + near_verified**, plus any pairs you confirm by hand.
 

@@ -1,3 +1,6 @@
+"""Study-selection flow (PRISMA). Supplementary: not a figure of the paper. The counts are those of
+data/screening/prisma_counts.csv. Writes figures/prisma_flow.png; run from anywhere: python figures/prisma.py"""
+from pathlib import Path
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 INK, MUTED, LINE, FILL, ACC = "#0b0b0b", "#52514e", "#8a8983", "#f3f2ee", "#2a78d6"
@@ -23,4 +26,4 @@ arr(29, 52, 29, 44)
 box(1, 30, 56, 14, "Included studies\nn = 12", bold=True, fc="#e3eefb", ec=ACC)
 arr(29, 30, 29, 22)
 box(1, 4, 56, 18, "Leakage coding of all 12\n(independent second rater on 6)\nCode reproduction, 3 seeds × 2 conditions\n(DiffMIC, nnMobileNet, GCN)")
-fig.savefig("fig1_prisma.png", dpi=400, bbox_inches="tight"); fig.savefig("fig1_prisma.pdf", bbox_inches="tight")
+fig.savefig(Path(__file__).with_name("prisma_flow.png"), dpi=400, bbox_inches="tight")
