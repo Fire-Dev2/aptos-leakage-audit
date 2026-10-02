@@ -10,7 +10,7 @@ def box(x, y, w, h, t, bold=False, fc=FILL, ec=LINE):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.4,rounding_size=1.2", fc=fc, ec=ec, lw=0.7))
     ax.text(x + w / 2, y + h / 2, t, ha="center", va="center", fontsize=5.4, color=INK, fontweight="bold" if bold else "normal", linespacing=1.25)
 def arr(x1, y1, x2, y2): ax.annotate("", (x2, y2), (x1, y1), arrowprops=dict(arrowstyle="-|>", lw=0.7, color=MUTED, shrinkA=0, shrinkB=0))
-box(1, 116, 47, 14, "Original searches\n(Papers with Code, arXiv, journals,\nconferences, 352 GitHub repos)\nn = 104")
+box(1, 116, 47, 14, "Original searches\n(arXiv, journals, conferences,\n352 GitHub repos)\nn = 104")
 box(52, 116, 47, 14, "Europe PMC database search\n(2020–2025, 25 Sep 2026)\nn = 268")
 arr(24.5, 116, 40, 106); arr(75.5, 116, 60, 106)
 box(20, 96, 60, 10, "Records after removing 28 duplicates\nn = 344")

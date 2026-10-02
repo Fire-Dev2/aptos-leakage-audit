@@ -9,7 +9,7 @@ Archived on Zenodo: [doi.org/10.5281/zenodo.23047712](https://doi.org/10.5281/ze
 The repository contains:
 
 1. **`leakage_audit/`**: the duplicate-audit tool (v0.3.0). It compares every image pair using exact hashes, perceptual and difference hashes, and pixel correlation of border-cropped thumbnails. It also includes a synthetic validation set.
-2. **`data/duplicates/`**: the duplicate groups found in the 3,662 labeled APTOS 2019 images, with the verified pairs and the review of 94 sampled pairs. The first rating was AI-assisted; 20 of the pairs were also rated by two people, who agreed on all of them.
+2. **`data/duplicates/`**: the duplicate groups found in the 3,662 labeled APTOS 2019 images, with the verified pairs and the review of 94 sampled pairs. The first rating was AI-assisted and the first author then checked every pair; 20 of the pairs were also rated independently by two people, who agreed on all of them.
 3. **`data/splits/`**: the split files used in the reruns.
    - `groupaware_70_15_15/` keeps every duplicate group on one side of the split. Use it to train and test on APTOS 2019 without cross-split duplicates.
    - `diffmic_released/` is the split released with DiffMIC (R0: 2,564 training and 1,098 test images) and the 352-image validation set held out from its training set (R1). It is kept as released, so 50 of its test images have a copy in the training set; `test_meta_nolabels.csv` marks them.
@@ -25,7 +25,7 @@ The repository contains:
 - **Random splits:** these place a copy of a training image in the test set for 6.0% of test images at 80/20 and 5.3% at 70/30.
 - **Checkpoint selection:** choosing the checkpoint on the test set added 2.2 accuracy points for DiffMIC, and 1.2 (model weights) or 0.8 (EMA weights) for nnMobileNet, over validation-based selection.
 - **GCN classifier:** oversampling before the split plus grade-sorted test batches gave 98.2% accuracy. A duplicate-aware split and training-only oversampling gave 81.6% with randomly ordered test batches and 83.2% one image at a time.
-- **Referable DR (grade 2 or higher):** read as a screen, the GCN model's sensitivity fell from 99.0% under the published protocol to 92.2% with the duplicate-aware split and one image at a time. Specificity fell from 99.4% to 93.3%.
+- **Referable DR (grade 2 or higher):** read as a screen, the GCN model's sensitivity fell from 99.0% under our reconstruction of the published protocol to 92.2% with the duplicate-aware split and one image at a time. Specificity fell from 99.4% to 93.3%.
 
 ## Using the duplicate groups
 

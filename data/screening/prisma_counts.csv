@@ -1,5 +1,5 @@
 stage,count,note
-"Records from original searches (Papers with Code, arXiv, journals, conferences; GitHub 352 repos)",104,"Phase 3 log, 2026-09-22"
+"Records from original searches (arXiv, journals, conferences; GitHub 352 repos)",104,"Phase 3 log, 2026-09-22"
 "Records from Europe PMC (2020-2025, searched 2026-09-25)",268,europepmc_export_2026-09-25.csv
 Duplicates removed,28,1 within original searches + 22 Europe PMC records already in the log + 5 duplicate Europe PMC records (E7)
 Records screened,344,103 + 241
