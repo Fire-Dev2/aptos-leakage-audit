@@ -1,6 +1,6 @@
 # APTOS 2019 leakage audit
 
-Code and data for the paper **"Data Leakage in Published Diabetic Retinopathy Classifiers Developed on APTOS 2019: A Code-Level Audit and Controlled Reproduction"** (T. Nambi, N. Sakthivel, E. Kharat, N. Bhimireddy, J. P. McElroy; submitted to *IEEE Access*).
+
 
 The repository contains:
 
