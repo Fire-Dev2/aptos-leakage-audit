@@ -34,7 +34,7 @@ def find_data():
         d = os.path.dirname(p)
         if os.path.isdir(f"{d}/train_images") and len(os.listdir(f"{d}/train_images")) >= 3662: return d
     return None
-DATA = os.environ.get("APTOS_DIR") or find_data(); assert DATA, "APTOS not found under this folder (run osc_setup.sh first)"
+DATA = os.environ.get("APTOS_DIR") or find_data(); assert DATA, "APTOS not found under this folder (run setup.sh first)"
 log("APTOS:", DATA)
 
 REPO = HOME / "repo"

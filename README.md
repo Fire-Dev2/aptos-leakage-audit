@@ -1,7 +1,5 @@
 # APTOS 2019 leakage audit
 
-
-
 The repository contains:
 
 1. **`leakage_audit/`**: the duplicate-audit tool (v0.3.0). It compares every image pair using exact hashes, perceptual and difference hashes, and pixel correlation of border-cropped thumbnails. It also includes a synthetic validation set.
@@ -65,7 +63,7 @@ Each study is run from the authors' code at a fixed commit. The patches add inst
 | nnMobileNet (CVPRW 2024) | github.com/Retinal-Research/NN-MOBILENET | `920acd3` | same R0/R1 splits (the authors' split was not released) |
 | GCN classifier (PLoS Comput. Biol. 2025) | github.com/mfar201/diabetic_retinopathy_classification_gcn | `fb123ab` | A: oversample, then split; B: duplicate-aware split, then oversample the training set |
 
-The runs used the Ohio Supercomputer Center (Slurm, NVIDIA A100). To run elsewhere, replace `YOUR_OSC_PROJECT` in the `.sbatch` files, or run the `run_*.py` scripts directly. Each script clones the upstream repository, applies the patch, downloads APTOS 2019 with the Kaggle API (you need your own `~/.kaggle/kaggle.json`) and runs three seeds (1234, 1 and 2).
+The runs used a university HPC cluster (Slurm, NVIDIA A100). To run on your own cluster, run `reproduction/diffmic/setup.sh` once and set `YOUR_PROJECT` in the `.sbatch` files to your Slurm account, or run the `run_*.py` scripts directly. Each script clones the upstream repository, applies the patch, downloads APTOS 2019 with the Kaggle API (you need your own `~/.kaggle/kaggle.json`) and runs three seeds (1234, 1 and 2).
 
 `reproduction/common/analyze_runs.py` selects checkpoints from the saved predictions (test-selected, validation-selected, last epoch) and computes paired differences with 95% t-intervals. The per-run outputs used in the paper are in `results/`.
 
@@ -77,4 +75,4 @@ The runs used the Ohio Supercomputer Center (Slurm, NVIDIA A100). To run elsewhe
 
 ## Citation
 
-See `CITATION.cff`. The paper is under review; this section will be updated with the DOI.
+The paper is under review. Citation details will be added after publication.

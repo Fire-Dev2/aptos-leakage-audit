@@ -40,7 +40,7 @@ def find_data():
         d = os.path.dirname(p)
         if os.path.isdir(f"{d}/train_images") and len(os.listdir(f"{d}/train_images")) >= 3662: return d
     return None
-DATA = os.environ.get("APTOS_DIR") or find_data(); assert DATA, "APTOS not found under this folder (run osc_setup.sh first)"
+DATA = os.environ.get("APTOS_DIR") or find_data(); assert DATA, "APTOS not found under this folder (run setup.sh first)"
 log("APTOS:", DATA)
 
 REPO = HOME / "repo"
@@ -189,7 +189,7 @@ print("\n" + "=" * 70); print("ALL DONE. Download results_gcn.tgz and send it to
 out = K / "run_gcn.py"; out.write_text(TEMPLATE.replace("__PAYLOAD__", repr(payload))); print("wrote", out, out.stat().st_size)
 (K / "gcn.sbatch").write_text("""#!/bin/bash
 #SBATCH --job-name=gcn
-#SBATCH --account=YOUR_OSC_PROJECT
+#SBATCH --account=YOUR_PROJECT
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=2
 #SBATCH --ntasks-per-node=24

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=phase5_diffmic
-#SBATCH --account=YOUR_OSC_PROJECT
+#SBATCH --account=YOUR_PROJECT
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=2
 #SBATCH --ntasks-per-node=16

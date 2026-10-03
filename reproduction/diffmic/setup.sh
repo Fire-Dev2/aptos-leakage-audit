@@ -1,6 +1,7 @@
 #!/bin/bash
-# One-time setup on OSC (run on a login node, e.g. OnDemand -> Clusters -> Ascend Shell Access):
-#   cd ~/leakage && bash osc_setup.sh
+# One-time setup on a Slurm cluster (run on a login node):
+#   cd ~/leakage && bash setup.sh
+# Adjust the module name below to your cluster's conda/miniconda module.
 set -e
 cd "$HOME/leakage"
 module load miniconda3/24.1.2-py310

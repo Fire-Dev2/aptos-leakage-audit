@@ -38,7 +38,7 @@ def find_data():
         d = os.path.dirname(p)
         if os.path.isdir(f"{d}/train_images") and len(os.listdir(f"{d}/train_images")) >= 3662: return d
     return None
-DATA = find_data(); assert DATA, "APTOS not found under this folder (run osc_setup.sh first)"
+DATA = find_data(); assert DATA, "APTOS not found under this folder (run setup.sh first)"
 log("APTOS:", DATA)
 
 REPO = HOME / "NN-MOBILENET"
@@ -141,7 +141,7 @@ print("\n" + "=" * 70); print("ALL DONE. Download results_nnmb.tgz and send it t
 out = K / "nnmb/run_nnmb.py"; out.write_text(TEMPLATE.replace("__PAYLOAD__", repr(payload))); print("wrote", out, out.stat().st_size)
 (K / "nnmb/nnmb.sbatch").write_text("""#!/bin/bash
 #SBATCH --job-name=nnmb
-#SBATCH --account=YOUR_OSC_PROJECT
+#SBATCH --account=YOUR_PROJECT
 #SBATCH --nodes=1
 #SBATCH --gpus-per-node=2
 #SBATCH --ntasks-per-node=24
